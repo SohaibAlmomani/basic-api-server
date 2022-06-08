@@ -2,7 +2,7 @@
 
 require("dotenv").config();
 
-let PORT = process.env.PORT || 3001;
+let PORT = process.env.PORT || 4050;
 const server = require("./src/server");
 
 const { db } = require("./src/models/index");
