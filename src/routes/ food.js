@@ -20,8 +20,8 @@ async function getOneFood(req, res) {
 }
 async function createFood(req, res) {
     let newFood = req.body;
-    let person = await Food.create(newFood);
-    res.status(201).json(person);
+    let addFood = await Food.create(newFood);
+    res.status(201).json(addFood);
 }
 async function updateFood(req, res) {
     let food_id = parseInt(req.params.id);
